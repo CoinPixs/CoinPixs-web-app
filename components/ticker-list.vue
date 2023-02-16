@@ -43,16 +43,16 @@
 
 <script>
 export default {
-  name: "ticker-list",
+  name: 'ticker-list',
   data() {
     return {
       tickers: [
-        { name: "BTC", value: "-" },
-        { name: "DOGE", value: "-" },
-        { name: "AAPL", value: "-" },
+        { name: 'BTC', value: '-' },
+        { name: 'DOGE', value: '-' },
+        { name: 'AAPL', value: '-' },
       ],
-      selectedTicker: { name: "BTC", value: "-" },
-    };
+      selectedTicker: { name: 'BTC', value: '-' },
+    }
   },
 
   watch: {
@@ -61,7 +61,7 @@ export default {
         (t) => t.name === this.searchTickerInput
       )
         ? true
-        : false;
+        : false
     },
   },
 
@@ -69,20 +69,20 @@ export default {
     addTicker() {
       const newTicker = {
         name: this.searchTickerInput,
-        value: "-",
-      };
+        value: '-',
+      }
       if (this.tickerInputIsAlreadyInUse) {
-        document.querySelector;
+        document.querySelector
       } else {
-        this.tickers.push(newTicker);
-        this.searchTickerInput = "";
+        this.tickers.push(newTicker)
+        this.searchTickerInput = ''
       }
     },
     removeTicker(ticker) {
-      this.tickers = this.tickers.filter((t) => t !== ticker);
+      this.tickers = this.tickers.filter((t) => t !== ticker)
     },
   },
-};
+}
 </script>
 
 <style></style>
