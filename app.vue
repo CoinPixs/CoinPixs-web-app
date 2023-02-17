@@ -359,6 +359,7 @@
 	// 10.🦆 | Магические строки и числа (URL, ключ LocalStorage, пагинация) |[]
 
 	// import tickerList from "./components/ticker-list.vue";
+
 	export default {
 		name: "App",
 		// components: { tickerList },
@@ -389,9 +390,9 @@
 		},
 
 		created() {
-			const windowData = Object.fromEntries(
-				new URL(window.location).searchParams.entries()
-			);
+			const route = useRoute;
+			const windowData = Object.fromEntries(new route.params.meta.entries());
+			console.log(windowData);
 			if (windowData.filter) this.tickersFilter = windowData.filter;
 			if (windowData.page) this.tickersPage = Number(windowData.page);
 
@@ -449,10 +450,11 @@
 			},
 
 			pageStateOptions(newValue) {
-				window.history.pushState(
+				const route = useRote();
+				history.pushState(
 					null,
 					document.title,
-					`${window.location.pathname}?filter=${newValue.filter}&page=${newValue.page}`
+					`${route.params.path}?filter=${newValue.filter}&page=${newValue.page}`
 				);
 			},
 
@@ -698,4 +700,3 @@
 		}
 	}
 </style>
-<style src="./tailwind.css"></style>
