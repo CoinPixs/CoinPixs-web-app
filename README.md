@@ -1,42 +1,5 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+# Отслеживайте свои криптовалюты, будьте в курсе - с *CryptoPix*!
+Ищете простой и удобный способ отслеживать свои криптовалютные инвестиции? Обратите внимание на CryptoPix. С помощью CryptoPix вы можете отслеживать десятки или даже сотни криптовалютных пар в одном удобном меню. Бегущая строка CryptoPix отображает изменения в реальном времени, так что вы можете быть в курсе последних колебаний цен и принимать обоснованные инвестиционные решения. Благодаря гибким настройкам уведомлений вы никогда не пропустите важное обновление. Возьмите под контроль свой портфель криптовалют и будьте впереди игры с CryptoPix. Попробуйте прямо сейчас!
+---
+# Track your crypto, stay in the know - with *CryptoPix*!
+Looking for an easy and convenient way to track your cryptocurrency investments? Look no further than CryptoPix. With CryptoPix, you can monitor dozens or even hundreds of crypto pairs in one convenient menu. The CryptoPix ticker displays changes in real-time, so you can stay up-to-date on the latest price fluctuations and make informed investment decisions. With flexible notification settings, you'll never miss an important update. Take control of your crypto portfolio and stay ahead of the game with CryptoPix. Try it now!
